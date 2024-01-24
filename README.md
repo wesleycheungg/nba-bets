@@ -31,22 +31,6 @@ A MERN-stack NBA betting app with live odds, scores, and results. Users will be 
  * the-odds-api
  * ball-dont-lie-api
 
-## Implementation Timeline <a name="implementation-timeline"></a>
-#### 12/5/21
- * User Authentication
-#### 12/6/21
- * Game odds API populating to MongoDB
- * Splash page with age verification
- * Currency addded to user
-#### 12/7/21
- * Game results API matching with odds database entries.
- * Game Index with all available games to bet.
- * Ability to spend currency on bets, or add more currency.
-#### 12/8/21
- * Modal to place bets.
- * Bets resolving logic.
- * User profile with historical and future bets.
-
 ## Contributions <a name="contributions"></a>
 ##### You can make contributions to my project here! 
  <a href="https://github.com/rytmercado">Contribute Here</a>
@@ -55,13 +39,6 @@ A MERN-stack NBA betting app with live odds, scores, and results. Users will be 
 ![login_form](https://user-images.githubusercontent.com/83959916/145600979-912788a4-0599-4b02-9509-2e57111ec5a1.png)
 ![games_index](https://user-images.githubusercontent.com/83959916/145601573-c4d334a7-6804-44ae-856e-631a0fac28fc.png)
 ![bet_modal](https://user-images.githubusercontent.com/83959916/145601579-99216df0-81ea-470c-a791-844d268bb90b.png)
-
-## Questions <a name="questions"></a>
-#### If you have any questions please reach out to any team-member via E-Mail: 
- * rytmercado@gmail.com
- * littlehouse2104@gmail.com
- * tharpercp@gmail.com
- * wesley.h.cheung@gmail.com
 
 ## Status <a name="status"></a>
 In progress.
