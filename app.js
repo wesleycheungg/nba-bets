@@ -40,7 +40,15 @@ app.use("/api/bets", bets)
 app.use("/api/comments", comments)
 
 
-app.get("/", (req, res) => res.send("Hello World!!"));
+app.get("/", (req, res) => {
+  const user = new User({
+    handle: "test testing",
+    email: "testing@gmail.com",
+    password: "password",
+    currency: "1000"
+  })
+  res.send("Hello World!!")
+});
 
 app.use(passport.initialize());
 require('./config/passport')(passport);
