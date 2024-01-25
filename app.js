@@ -35,9 +35,9 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json()); 
 
 app.use("/api/users", users);
-app.use("/api/games", games)
-app.use("/api/bets", bets)
-app.use("/api/comments", comments)
+// app.use("/api/games", games)
+// app.use("/api/bets", bets)
+// app.use("/api/comments", comments)
 
 
 app.get("/", (req, res) => {
