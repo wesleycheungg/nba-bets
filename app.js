@@ -1,19 +1,20 @@
-const express = require("express")
+const express = require("express");
 const app = express(); 
-const mongoose = require("mongoose")
-const db = require('./config/keys_development').mongoURI
-const users = require("./routes/api/users")
-const comments = require('./routes/api/comments')
-const games = require("./routes/api/games")
-const User = require("./models/User")
-const bodyParser = require("body-parser")
+const mongoose = require("mongoose");
+const db = require('./config/keys_development').mongoURI;
+
+const users = require("./routes/api/users");
+const comments = require('./routes/api/comments');
+const games = require("./routes/api/games");
+const User = require("./models/User");
+const bodyParser = require("body-parser");
 const passport = require("passport");
-const getGameOdds = require('./util/odds')
-const getGameResults = require('./util/games')
-const Game = require('./models/Game')
-const bets = require('./routes/api/bets')
-const resolveBets = require('./util/resolveBets')
-const lockBets = require('./util/lockBets')
+const getGameOdds = require('./util/odds');
+const getGameResults = require('./util/games');
+const Game = require('./models/Game');
+const bets = require('./routes/api/bets');
+const resolveBets = require('./util/resolveBets');
+const lockBets = require('./util/lockBets');
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("frontend/build"));
@@ -24,7 +25,7 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose
     .connect(db, { useNewUrlParser: true })
-    .then(() => console.log('Connected to mongoDB'))
+    .then(() => console.log('Connected to mongoDB successfully'))
     .catch(err => console.log(err));
 
 app.use(bodyParser.urlencoded({
